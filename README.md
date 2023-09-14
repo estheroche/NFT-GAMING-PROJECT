@@ -25,3 +25,14 @@ Chainlink Verifiable Random Function (VRF) is a cryptographic feature offered by
 - Decentralization: Chainlink VRF relies on a decentralized network of oracle nodes, reducing the risk of a single point of failure or manipulation.
 
 - Use Cases: It can be used in various applications, including gaming, gambling, and DeFi, where randomness is needed.
+
+# Step-by-step guide on how to interact with the contract:
+
+- Deploy the contract in `Remix`.
+
+- Fund the contract with testnet `LINK `tokens.
+
+- Call the `requestRandomTrait` function to send a request for random values to Chainlink VRF. This function will initiate the request and store the request status in the `s_requests` mapping. It will also emit a RequestSent event.
+- Wait for the request to be fulfilled by Chainlink VRF. This may take a few minutes depending on the current testnet conditions.
+- Call the `lastRequestId` function to fetch the request ID of your request.
+- After the request is fulfilled, the `fulfillRandomWords` function will be called by Chainlink VRF, passing the request ID
