@@ -11,12 +11,12 @@ async function main() {
     "VRFinterface",
     "0x567B6fcc497386c48Cf91BA98Bea76762368F269"
   );
-  await Kitty.requestNewRandomCharacter(ownerAddr,0, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
-   await Kitty.requestNewRandomCharacter(ownerAddr,1, "ipfs://ipfs://bafkreid43slp3gzbcuynqdarlren77efarp24edwfuwhk4dewy5ig6dbhi" );
- await Kitty.requestNewRandomCharacter(ownerAddr,2, "ipfs://ipfs://ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
-  await Kitty.requestNewRandomCharacter(ownerAddr,3, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
-   await Kitty.requestNewRandomCharacter(ownerAddr,4, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
-    await Kitty.requestNewRandomCharacter(ownerAddr,5, "ipfs://ipfs://bafkreid43slp3gzbcuynqdarlren77efarp24edwfuwhk4dewy5ig6dbhi" );
+  await Kitty.requestNewRandomTrait(ownerAddr,0, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
+   await Kitty.requestNewRandomTrait(ownerAddr,1, "ipfs://ipfs://bafkreid43slp3gzbcuynqdarlren77efarp24edwfuwhk4dewy5ig6dbhi" );
+ await Kitty.requestNewRandomTrait(ownerAddr,2, "ipfs://ipfs://ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
+  await Kitty.requestNewRandomTrait(ownerAddr,3, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
+   await Kitty.requestNewRandomTrait(ownerAddr,4, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
+    await Kitty.requestNewRandomTrait(ownerAddr,5, "ipfs://ipfs://bafkreid43slp3gzbcuynqdarlren77efarp24edwfuwhk4dewy5ig6dbhi" );
 
 }
 
