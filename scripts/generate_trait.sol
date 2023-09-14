@@ -5,14 +5,18 @@ import { ethers } from 'hardhat';
 async function main() {
 
 
-const  CatContract =	'0xe2a1FcD65Ab92a203280Ed326DD6395499CbB7c8'
+  const Contract =	'0x567B6fcc497386c48Cf91BA98Bea76762368F269'
 
-const ownerAddr = '0xe9999a29B116cB45444621EcD1CE52CA013243E4'
   const Kitty = await ethers.getContractAt(
-    "INFT",
-    "0xe2a1FcD65Ab92a203280Ed326DD6395499CbB7c8"
+    "VRFinterface",
+    "0x567B6fcc497386c48Cf91BA98Bea76762368F269"
   );
-  await Kitty.requestNewRandomCharacter(ownerAddr,6, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
+  await Kitty.requestNewRandomCharacter(ownerAddr,0, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
+   await Kitty.requestNewRandomCharacter(ownerAddr,1, "ipfs://ipfs://bafkreid43slp3gzbcuynqdarlren77efarp24edwfuwhk4dewy5ig6dbhi" );
+ await Kitty.requestNewRandomCharacter(ownerAddr,2, "ipfs://ipfs://ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
+  await Kitty.requestNewRandomCharacter(ownerAddr,3, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
+   await Kitty.requestNewRandomCharacter(ownerAddr,4, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
+    await Kitty.requestNewRandomCharacter(ownerAddr,5, "ipfs://ipfs://bafkreid43slp3gzbcuynqdarlren77efarp24edwfuwhk4dewy5ig6dbhi" );
 
 }
 
