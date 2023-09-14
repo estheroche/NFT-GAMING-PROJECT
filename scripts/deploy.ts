@@ -10,7 +10,7 @@ async function main() {
       "VRFinterface.",
       "0x567B6fcc497386c48Cf91BA98Bea76762368F269"
     );
-    await request.mint(ownerAddr,6, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
+    await request.mint(Contract,1, "ipfs://bafkreibewwt2yosste3zq44zxw7xhajqpodlklebbtcqqpr6mora7twhlu" );
    
   }
   
